@@ -1,0 +1,81 @@
+.welcomeLine{
+    margin: auto;
+    width: 85%;
+
+    border: 2px solid powderblue;
+
+}
+
+#nameBox_sticky_id{
+    margin: auto;
+    margin-top: 10px;
+
+    border: 2px solid pink;
+    border-radius : 5px;
+    width: 70%;
+
+}
+#educationBox_id{
+    margin: auto;
+    margin-top: 10px;
+
+    border: 2px solid violet;
+    border-radius : 5px;
+    width: 70%;
+
+}
+#workBox_id{
+    margin: auto;
+    margin-top: 10px;
+
+    border: 2px solid yellowgreen;
+    border-radius : 5px;
+    width: 70%;
+
+}
+.educationBox{
+    margin: auto;
+    margin-top: 10px;
+
+    border: 2px solid blue;
+    border-radius : 5px;
+    width: 70%;
+
+}
+.eduBox{
+    margin:auto;
+    margin-top: 5px;
+    width:60%;
+    background-color: #ffffcc;
+    border-radius : 10px;
+
+    text-align: center;
+    border: 2px solid pink;
+}
+.workBox{
+    margin:auto;
+    margin-top: 5px;
+    width:60%;
+    background-color: #e6f2ff   ;
+    border-radius : 20px;
+
+    text-align: center;
+    padding-top: 20px;
+    border: 2px solid pink;
+
+    height: 200px;
+
+
+}
+
+#formDivId{
+    margin: auto;
+    margin-top: 10px;
+
+    border: 2px solid red;
+    width: 50%;
+
+    height : 60px;
+}
+
+
