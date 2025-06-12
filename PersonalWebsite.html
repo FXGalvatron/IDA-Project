@@ -38,7 +38,7 @@
                 }    
                 else if( heading.textContent == "Cool Project 2"){
                     heading.textContent = "Cool Project 2 : Details";
-                    para.textContent = "An elaborate home lab to simulate attacks and use SIEM solutions to check for things and For malicious networks";
+                    para.textContent = "An elaborate home lab to simulate attacks and use SIEM programs to check for malicious activity";
                 }
                 else if(heading.textContent == "Cool Project 2 : Details")
                 {
@@ -87,7 +87,7 @@
             We are a team of 3 members
             Madhurshalini Mahalingam : 193652
             <br>
-            Farhan Subi 
+            Farhan Subi : 193635
             <br>
             Fredrick Okumu 
         </p>
@@ -106,7 +106,7 @@
     <div id="Edu2" class="eduBox">
         <h3>Awesome University</h3>
         <p>Bachelors in Electronics and Communication Engineering, 2020</p>
-        <p>coursework : DSP, Image processing, Machine Learning, secuity systems, networks, communcation and sensor systems </p>
+        <p>coursework : DSP, Image processing, Machine Learning, Secuity Systems, Networks, Communcation and Sensor Systems </p>
     </div>
 </div>
 
@@ -121,7 +121,7 @@
     
     <div id="work2" class="workBox">
         <h3 class = "workboxtext">Cool Project 2</h3>
-        <p class = "workboxtext">cyber security, secure systems</p>
+        <p class = "workboxtext">Cyber Security, Secure Systems</p>
         <p class = "workboxtext">click this box</p>
     </div>
 
@@ -134,7 +134,43 @@
 
 <!-- Reion to make Inquiries form -->
 <div id="formDivId" >
-    <h3> Form to be implemented here. </h3>
+    <h2> Have a question? Here's a form!</h2>
+	<body>
+    <form method="post"
+          action=enquiry.php>
+
+      <fieldset><legend>Name</legend>
+        <label class="horizontal">
+          <input type="text" name="theName" placeholder="Your Name"
+                 required>
+        </label>
+	  </fieldset>
+	  <fieldset><legend>Email</legend>
+		<label class="horizontal">
+          <input type="text" name="theEmail" placeholder="Your Email" required>
+      </fieldset>
+
+      <fieldset><legend>Message</legend>
+          <label class="horizontal">
+            <input type="text" name="theMessage" placeholder="Your Message">
+          </label>
+        </fieldset>
+
+        <fieldset><legend>To:</legend>
+          <label class="horizontal">
+		  <input type="radio" name="contact" value="Madhur">Madhur</label><br>
+          <label>
+		  <input type="radio" name="contact" value="Frederick">Frederick</label><br>
+          <label>
+		  <input type="radio" name="contact" value="Farhan">Farhan
+          </label><br>
+        </fieldset>
+      
+      <p><input type="submit" value="Submit"> 
+        <input type="reset" value="Clear Form"></p>
+    </form>
+	<br><br><br>
+
 </div>
 
 </body>
