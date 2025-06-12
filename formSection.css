@@ -1,0 +1,10 @@
+
+#formDivId{
+    margin: auto;
+    margin-top: 10px;
+
+    border: 2px solid red;
+    width: 50%;
+
+    height : 60px;
+}

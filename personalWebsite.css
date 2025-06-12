@@ -1,8 +1,16 @@
+body {
+    /*border: 2px solid pink;*/
+    background-color: rgba(194, 251, 251, 0.687);
+    /*font-family: "Lucida Console", "Courier New", monospace;*/
+    color:rgb(44, 84, 84);
+    width:90%;
+    margin: auto;
+}
 .welcomeLine{
     margin: auto;
-    width: 85%;
+    width: 80%;
 
-    border: 2px solid powderblue;
+   /* border: 2px solid powderblue;*/
 
 }
 
@@ -10,72 +18,53 @@
     margin: auto;
     margin-top: 10px;
 
-    border: 2px solid pink;
+    position: sticky;
+    top: 0;
+
+    border: 2px solid rgb(100, 197, 197);
     border-radius : 5px;
-    width: 70%;
+    height : 200px;
+    width: 80%;
+    background-color: rgb(100, 197, 197);
+
 
 }
-#educationBox_id{
+.groupPhotoCSS{
+    border-radius: 50px;
+
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: 55px;
+    margin-bottom: 10px;
+    /*position: relative;
+    right : 100px;*/
+}
+#nameBox_name{
+    margin-top: 75px;
+    color:whitesmoke;
+}
+#infoBoxID{
     margin: auto;
     margin-top: 10px;
-
-    border: 2px solid violet;
+    width:80%;
+   
+    height : 200px;
+    /*border: 2px solid pink;*/
     border-radius : 5px;
-    width: 70%;
-
+    position: sticky;
+    top: 0;
 }
-#workBox_id{
-    margin: auto;
-    margin-top: 10px;
+#DescBoxID{
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: right;
+    margin-top: 46px;
 
-    border: 2px solid yellowgreen;
-    border-radius : 5px;
-    width: 70%;
 
-}
-.educationBox{
-    margin: auto;
-    margin-top: 10px;
-
-    border: 2px solid blue;
-    border-radius : 5px;
-    width: 70%;
-
-}
-.eduBox{
-    margin:auto;
-    margin-top: 5px;
-    width:60%;
-    background-color: #ffffcc;
-    border-radius : 10px;
-
-    text-align: center;
-    border: 2px solid pink;
-}
-.workBox{
-    margin:auto;
-    margin-top: 5px;
-    width:60%;
-    background-color: #e6f2ff   ;
-    border-radius : 20px;
-
-    text-align: center;
-    padding-top: 20px;
-    border: 2px solid pink;
-
-    height: 200px;
+    width:30%;
+    position: absolute;
+    right: 20px;
+    /*border: 3px solid rgba(194, 251, 251, 0.687);*/
+    color: rgb(194, 251, 251);
 
 
 }
-
-#formDivId{
-    margin: auto;
-    margin-top: 10px;
-
-    border: 2px solid red;
-    width: 50%;
-
-    height : 60px;
-}
-
-
