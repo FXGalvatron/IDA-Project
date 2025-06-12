@@ -1,0 +1,45 @@
+
+#educationBox_id{
+    margin: auto;
+    margin-top: 10px;
+
+    /*border: 2px solid violet;*/
+    border-radius : 5px;
+    width: 75%;
+    color: rgb(44, 84, 84);
+
+}
+#workBox_id{
+    margin: auto;
+    /*margin-top: 10px;*/
+    /*border: 2px solid yellowgreen;*/
+    border-radius : 5px;
+    width: 75%;
+    color: rgb(44, 84, 84);
+}
+
+.eduBox{
+    margin:auto;
+    margin-top: 5px;
+    width:80%;
+    background-color:  rgba(101, 201, 201, 0.842);
+    border-radius : 10px;
+
+    text-align: center;
+    border: 2px solid rgba(101, 201, 201, 0.842);
+}
+.workBox{
+    margin:auto;
+    margin-top: 5px;
+    width:80%;
+    background-color: #e6f2ff   ;
+    border-radius : 10px;
+
+    text-align: center;
+    padding-top: 25px;
+    border: 2px solid #dae5f2  ;
+    height: 200px;
+
+}
+
+
