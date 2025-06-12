@@ -5,7 +5,70 @@
         <link rel="stylesheet" href="educationAndExpertiseSection.css">
         <link rel="stylesheet" href="formSection.css">
 
+        <script>
+            'use strict';
+            document.addEventListener('DOMContentLoaded',init);
+            function init(e){
+                document.getElementById('work1').addEventListener('click', workboxchangefxn );
+                document.getElementById('work2').addEventListener('click', workboxchangefxn );
+                document.getElementById('work3').addEventListener('click', workboxchangefxn );
+ /*TO IMPLEMENT HOVER for color cahnge ???*/
+                document.getElementById('work1').addEventListener('mouseover', hoverfxn );
+                document.getElementById('work2').addEventListener('mouseover', hoverfxn );
+                document.getElementById('work3').addEventListener('mouseover', hoverfxn );
 
+                document.getElementById('work1').addEventListener('mouseout', stophoverfxn );
+                document.getElementById('work2').addEventListener('mouseout', stophoverfxn );
+                document.getElementById('work3').addEventListener('mouseout', stophoverfxn );
+            }
+
+            function workboxchangefxn(e){
+                let heading = e.target.querySelector('h3');
+                let para = e.target.querySelector('p');
+
+                if( heading.textContent == "Cool Project 1"){
+                    heading.textContent = "Cool Project 1 : Details";
+                    para.textContent = "An automated inspection system for a medical device by integrating cameras and implementing object detection and image classification. Achieved 93% accuracy and reduced inspection time by 80%. Built a web interface using Flask to display its functioning to stakeholders.";
+                }
+                else if(heading.textContent == "Cool Project 1 : Details")
+                {
+                    heading.textContent = "Cool Project 1";
+                    para.textContent = "AI, Computer Vision";
+
+                }    
+                else if( heading.textContent == "Cool Project 2"){
+                    heading.textContent = "Cool Project 2 : Details";
+                    para.textContent = "An elaborate home lab to simulate attacks and use SIEM solutions to check for things and For malicious networks";
+                }
+                else if(heading.textContent == "Cool Project 2 : Details")
+                {
+                    heading.textContent = "Cool Project 2";
+                    para.textContent = "Cyber Security, Secure Systems, Home Lab";
+
+                }
+                else if( heading.textContent == "Cool Project 3"){
+                    heading.textContent = "Cool Project 3 : Details";
+                    para.textContent = "Developing a reinforcement learning algorithm for an assistive robotic pouring task in the HIRAC project at the work life robotic institute.";
+                }
+                else if(heading.textContent == "Cool Project 3 : Details")
+                {
+                    heading.textContent = "Cool Project 3";
+                    para.textContent = "Reinforcement Learning, Reward Functions";
+
+                }               
+            }
+
+            function hoverfxn(e){
+                e.target.style.backgroundColor = '#d0add9';
+                e.target.style.cursor = 'pointer';
+                e.target.style.transform = 'scale(1.025)';
+            }
+            function stophoverfxn(e){
+                e.target.style.backgroundColor = '#e6f2ff';
+                e.target.style.transform = '';
+            }
+
+        </script>
         <title>Madrick Subi</title>
     </head>
 <body>
@@ -51,21 +114,21 @@
     <h2>Expertise : </h2>
 
     <div id="work1" class="workBox">
-        <h3> Cool Project 1</h3>
-        <p>AI, Computer Vision</p>
-        <p>click me</p>
+        <h3 class = "workboxtext">Cool Project 1</h3>
+        <p class = "workboxtext">AI, Computer Vision</p>
+        <p class = "workboxtext">click this box</p>
     </div>
     
     <div id="work2" class="workBox">
-        <h3> Cool Project 2</h3>
-        <p>cyber security, secure systems</p>
-        <p>click me</p>
+        <h3 class = "workboxtext">Cool Project 2</h3>
+        <p class = "workboxtext">cyber security, secure systems</p>
+        <p class = "workboxtext">click this box</p>
     </div>
 
     <div id="work3" class="workBox">
-        <h3> Cool Project 3</h3>
-        <p> Transmission Lines, Antennas</p>
-        <p>click me</p>
+        <h3 class = "workboxtext">Cool Project 3</h3>
+        <p class = "workboxtext"> Transmission Lines, Antennas</p>
+        <p class = "workboxtext">click this box</p>
     </div>
 </div>
 
