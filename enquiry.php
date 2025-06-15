@@ -43,7 +43,7 @@
 <?php 
   $recipients = array(
     "Madhur" => "mmahalingam@stud.hs-offenburg.de",
-    "Frederick" => "fokumu@stud.hs-offenburg.de",
+    "Fredrick" => "fokumu@stud.hs-offenburg.de",
     "Farhan" => "fsubi@stud.hs-offenburg.de"
   );
 
