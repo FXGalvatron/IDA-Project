@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <link rel="stylesheet" href="personalWebsite.css">
         <link rel="stylesheet" href="educationAndExpertiseSection.css">
@@ -33,7 +33,7 @@
                 else if(heading.textContent == "Cool Project 1 : Details")
                 {
                     heading.textContent = "Cool Project 1";
-                    para.textContent = "AI, Computer Vision";
+                    para.textContent = "Artificial Intelligence, Computer Vision";
 
                 }    
                 else if( heading.textContent == "Cool Project 2"){
@@ -48,12 +48,12 @@
                 }
                 else if( heading.textContent == "Cool Project 3"){
                     heading.textContent = "Cool Project 3 : Details";
-                    para.textContent = "Developing a reinforcement learning algorithm for an assistive robotic pouring task in the HIRAC project at the work life robotic institute.";
+                    para.textContent = "Automated Availability Tracker for 3G/4G Mobile Sites Using Python : A Python-based tool that monitors and reports of availability metrics for 3G and 4G mobile network sites. It extracts performance data from network management systems and generates reports to highlight site-level availability trends. The solution helps telecom engineers quickly identify underperforming sites and improve network reliability through timely interventions.";
                 }
                 else if(heading.textContent == "Cool Project 3 : Details")
                 {
                     heading.textContent = "Cool Project 3";
-                    para.textContent = "Reinforcement Learning, Reward Functions";
+                    para.textContent = "Telecommunications, Network Performance Automation, 3G/4G Mobile Sites, Python";
 
                 }               
             }
@@ -82,14 +82,15 @@
     <h1 id="nameBox_name"  >Madrick Subi</h1>
 </div>
 <div id="infoBoxID"> 
-    <div id="DescBoxID", class="DescBox">
+    <div id="DescBoxID" class="DescBox">
         <p> 
             We are a team of 3 members
-            Madhurshalini Mahalingam : 193652
+            <br>
+            Madhurshalini Mahalingam : 193623
             <br>
             Farhan Subi : 193635
             <br>
-            Fredrick Okumu 
+            Fredrick Okumu : 193630
         </p>
     </div>
 </div>
@@ -115,7 +116,7 @@
 
     <div id="work1" class="workBox">
         <h3 class = "workboxtext">Cool Project 1</h3>
-        <p class = "workboxtext">AI, Computer Vision</p>
+        <p class = "workboxtext">Artificial Intelligence, Computer Vision</p>
         <p class = "workboxtext">click this box</p>
     </div>
     
@@ -127,47 +128,45 @@
 
     <div id="work3" class="workBox">
         <h3 class = "workboxtext">Cool Project 3</h3>
-        <p class = "workboxtext"> Automated Availability Tracker for 3G/4G Mobile Sites Using Python</p>
+        <p class = "workboxtext"> Telecommunications, Network Performance Automation, 3G/4G Mobile Sites, Python</p>
         <p class = "workboxtext">click this box</p>
     </div>
 </div>
 
 <!-- Reion to make Inquiries form -->
 <div id="formDivId" >
-    <h2> Have a question? Here's a form!</h2>
-	<body>
-    <form method="post"
-          action=enquiry.php>
+    <h2> You'd like to collaborate? Connect with us. </h2>
+    <form method="post" action=enquiry.php>
 
       <fieldset><legend>Name</legend>
-        <label class="horizontal">
-          <input type="text" name="theName" placeholder="Your Name"
-                 required>
+        <label class="horizontal"> 
+          <input type="text" name="theName" placeholder="Your Name" required>
         </label>
 	  </fieldset>
+
 	  <fieldset><legend>Email</legend>
 		<label class="horizontal">
           <input type="text" name="theEmail" placeholder="Your Email" required>
+        </label>
       </fieldset>
 
       <fieldset><legend>Message</legend>
           <label class="horizontal">
-            <input type="text" name="theMessage" placeholder="Your Message">
+            <input type="text" name="theMessage" placeholder="Your Message" required>
           </label>
         </fieldset>
 
-        <fieldset><legend>To:</legend>
+        <fieldset><legend>Collaborate on:</legend>
           <label class="horizontal">
-		  <input type="radio" name="contact" value="Madhur">Madhur</label><br>
+		  <input type="radio" name="contact" value="Madhur"> Artificial Intelligence </label><br>
           <label>
-		  <input type="radio" name="contact" value="Fredrick">Fredrick</label><br>
+		  <input type="radio" name="contact" value="Farhan"> Cyber Security </label><br>
           <label>
-		  <input type="radio" name="contact" value="Farhan">Farhan
-          </label><br>
+		  <input type="radio" name="contact" value="Fredrick"> Telecommunications Engineering </label><br>
         </fieldset>
       
-      <p><input type="submit" value="Submit"> 
-        <input type="reset" value="Clear Form"></p>
+        <input type="submit" value="Submit"> 
+        <input type="reset" value="Clear Form">
     </form>
 	<br><br><br>
 

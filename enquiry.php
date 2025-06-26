@@ -1,48 +1,41 @@
-<!DOCTYPE html>
-
-
 <?php /* all client-side checks have to be done again! */ 
-   if(!empty($_POST['theName'])) //includes isset()
       $name =  $_POST['theName'];
-   else
-      $name = "Foobar";
-  
-   if(!empty($_POST['theEmail'])) //includes isset()
       $email =  $_POST['theEmail'];
-   else
-      $email = "xyz@abc.com";
-   
-   if(!empty($_POST['theMessage']))
-	  $message = $_POST['theMessage'];
-   else
-	  $message = "Hi!";
-	
-   if(isset($_POST['contact']))
-      $contact =  $_POST['contact'];
-   else
-      $contact = "";
-?>
+      $message = $_POST['theMessage'];
 
+	
+   if(isset($_POST['contact'])){
+    $contact =  $_POST['contact'];
+    $ack_message = "Your message has been sent to $contact";
+   }
+   else{
+    $contact = "";
+    $ack_message = "Your message has been sent to the team.";
+   }
+?>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="enquiry.css">
     <title>Enquiry Sent!</title>
+    
   </head>
 
   <body>
     <h3>Hello, <?php echo $name ?>!</h3>
 
-    <p>Your message will be sent to 
-       <?php echo "$contact "; ?>
-       and will be replied to in the next few days!</p>
+    
+    <p>We're excited to read your ideas! <br> 
+       <?php echo "$ack_message "; ?>
+       and you will get a response in a few days.</p>
 
   </body>
 </html>
 
 <?php 
   $recipients = array(
-    "Madhur" => "mmahalingam@stud.hs-offenburg.de",
+    "Madhur" => "mmahalin@stud.hs-offenburg.de",
     "Fredrick" => "fokumu@stud.hs-offenburg.de",
     "Farhan" => "fsubi@stud.hs-offenburg.de"
   );
@@ -51,7 +44,7 @@
   if (array_key_exists($contact, $recipients)) {
     $to = $recipients[$contact];
   } else {
-    $to = "abc@xyz.com"; // fallback email
+    $to = "mmahalin@stud.hs-offenburg.de"; // fallback email
   }
 
   // Construct the message
